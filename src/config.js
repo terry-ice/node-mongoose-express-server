@@ -35,7 +35,7 @@ exports.EMAIL = {
 }
 
 exports.AKISMET = {
-	key: argv.akismet_key || 'c71123bcf0c7',
+	key: argv.akismet_key || 'akismet_key',
 	blog: argv.akismet_blog || 'your akismet blog site, like: '
 }
 
