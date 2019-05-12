@@ -9,12 +9,7 @@ import models from './models';
 
 const app = express();
 
-// data server
 mongodb.connect();
-// redis.connect();
-
-// Application-Level Middleware
-
 app.use(cors());
 
 app.set('port', config.APP.PORT);

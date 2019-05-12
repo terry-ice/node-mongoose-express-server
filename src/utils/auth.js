@@ -2,7 +2,7 @@
  * @Author: terry
  * @Date: 2019-04-02 18:28:02
  * @Last Modified by: https://github.com/terry-ice
- * @Last Modified time: 2019-04-02 21:54:46
+ * @Last Modified time: 2019-05-12 22:09:14
  */
 
 import jwt from 'jsonwebtoken';
@@ -35,7 +35,4 @@ const authIsVerified = req => {
   }
   return false;
 };
-
-export {
-  authIsVerified,
-};
+module.exports = authIsVerified;

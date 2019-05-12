@@ -3,10 +3,8 @@
  * 标签控制器
  *
  */
-
-import config from '../config';
 import redis from '../core/redis';
-import { authIsVerified } from '../utils/auth';
+import authIsVerified from '../utils/auth';
 import {
   handleRequest,
   handleError,
@@ -62,10 +60,8 @@ const getTags = ({ query, options, success_cb, err_cb, req }) => {
   };
 
   // 请求标签
-  // .collection.aggregate()
   Tag.paginate(query, options)
     .then(tags => {
-      //  console.log(tags,'tags')
       tags = JSON.parse(JSON.stringify(tags));
       getTagsCount(tags);
     })
@@ -267,17 +263,6 @@ tagCtrl.item.DELETE = ({ params: { tag_id } }, res) => {
     });
 };
 
-// const tags = {};
-// // export
-// tags.list = (req, res) => {
-//   handleRequest({ req, res, controller: tagsCtrl.list });
-// };
-// tags.item = (req, res) => {
-//   handleRequest({ req, res, controller: tagCtrl.item });
-// };
-
-// export default tags;
-// export
 const list = (req, res) => {
   handleRequest({ req, res, controller: tagCtrl.list });
 };

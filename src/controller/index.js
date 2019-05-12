@@ -1,5 +1,13 @@
-import tag from "./tag";
+import tag from './tag';
+import auth from './auth';
+import category from './category';
+import article from './article';
+import comment from './comment';
 
 export default {
-   tag
+  tag,
+  auth,
+  category,
+  article,
+  comment,
 };
