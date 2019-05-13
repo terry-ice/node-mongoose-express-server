@@ -42,13 +42,13 @@ exports.AKISMET = {
 exports.APP = {
 	ROOT_PATH: __dirname,
 	LIMIT: 16,
-	PORT: 3002
+	PORT: 8000
 }
 
 exports.INFO = {
 	name: 'terry-blog',
 	version: '1.0',
-	author: 'Surmon',
+	author: 'muze',
 	site: 'http://592php.com',
 	github: 'https://github.com/terry-ice',
 	powered: ['Vue', 'Nuxt.js', 'React', 'Angular', 'Bootstrap4', 'Nodejs', 'MongoDB', 'Express', 'Nginx']
