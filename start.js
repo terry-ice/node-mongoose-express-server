@@ -14,13 +14,10 @@ module.exports = {
     // First application
     {
       name: "node-api",
-      script: "src/server.js",
-      node_args: "--harmony",
+      script: "src/index.js",
+      node_args: "NODE_ENV=production babel-node",
       watch: true,
       env: {
-        NODE_ENV: "development"
-      },
-      env_production: {
         NODE_ENV: "production"
       }
     }
